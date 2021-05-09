@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSanta</title>
+</head>
+<body>
+  <center>
+    <h1>
+      Refer console to check
+
+    </h1>
+  </center>
+
+  
+</body>
+<script>
+  string="<p><strong><em>SkillSanta Assignments</em></strong></p>";
+  
+  function strip_tags(str)
+  {
+     if ((str===null) || (str===''))
+         return false;
+    else
+     str = str.toString();
+    return str.replace(/<[^>]*>/g, '');
+  }
+  console.log(strip_tags(string));
+  
+       </script>
+</html>

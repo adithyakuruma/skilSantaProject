@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillSanta Assignment1</title>
+</head>
+<script>
+let result={};
+
+const vowels = ["a", "e", "i", "o", "u"];
+
+
+function countvowels(str){
+    for (let letter of str.toLowerCase()) {
+        if (vowels.includes(letter)) {
+            if(result[letter]==null){
+                result[letter]=1;
+            }
+            else{
+            result[letter]++;
+            }
+        }
+    }
+}
+let str="Hey This is Skillsanta JS Training";
+
+countvowels(str);
+
+for (var key in result) {
+    document.write( key.toUpperCase() +" : " + result[key] + "<br>");
+}
+</script>
+<body>
+</body>
+</html>
